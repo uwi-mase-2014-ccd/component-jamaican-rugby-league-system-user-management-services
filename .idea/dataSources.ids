@@ -2526,6 +2526,28 @@
       <index name="django_session_expire_date" unique="false" columns="expire_date"/>
       <index name="django_session_session_key_like" unique="false" columns="session_key"/>
     </table>
+    <table name="snippets_snippet" schema="public" catalog="apache" type="TABLE">
+      <column name="id" sqlType="serial" length="10" precision="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgnc25pcHBldHNfc25pcHBldF9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <column name="created" sqlType="timestamptz" length="35" precision="6" nullable="false" jdbcType="93"/>
+      <column name="title" sqlType="varchar" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="code" sqlType="text" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="linenos" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="language" sqlType="varchar" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="style" sqlType="varchar" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="snippets_snippet_pkey" columns="id"/>
+    </table>
+    <table name="snippets_snippet_id_seq" schema="public" catalog="apache" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
     <procedure name="_pg_char_max_length" schema="information_schema" catalog="apache" type="2">
       <prototype>
         <parameter name="typid" sqlType="oid" length="0" precision="0" nullable="true" jdbcType="-5" type="1" index="1"/>

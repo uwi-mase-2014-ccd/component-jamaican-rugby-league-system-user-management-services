@@ -39,7 +39,6 @@ INSTALLED_APPS = (
     'psycopg2',
     'rest_framework',
     'pygments',
-    'quickstart',
     'snippets',
 )
 
