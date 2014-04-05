@@ -37,6 +37,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'psycopg2',
+    'rest_framework',
+    'pygments',
+    'quickstart',
+    'snippets',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,6 +85,11 @@ EXAMPLE_DATABASES = {
         'USER': 'bitnami',
         'PASSWORD': '2157a7ae31'
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGINATE_BY': 10
 }
 
 # Internationalization
