@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'pygments',
     'snippets',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -64,7 +65,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'apache',
+        'NAME': 'newdb',
         'HOST': 'localhost',
         'PORT': '5434',
         'USER': 'postgres',
@@ -121,6 +122,7 @@ STATICFILES_FINDERS = (
 
 
 STATIC_ROOT = '/Users/vaun-pierrewynter/Web-Development/apps/django/django_projects/static/'
+
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),

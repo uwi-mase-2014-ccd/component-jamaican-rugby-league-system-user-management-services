@@ -1,16 +1,18 @@
-from django.conf.urls import patterns, include, url
-
+from snippets import views
+from django.conf.urls import patterns, url, include
+from rest_framework.routers import DefaultRouter
 from django.contrib import admin
-from rest_framework import routers
-from django.views.debug import default_urlconf
+
 
 admin.autodiscover()
 
+router = DefaultRouter()
+router.register(r'snippets', views.SnippetViewSet)
+router.register(r'users', views.UserViewSet)
+
 urlpatterns = patterns('',
-                       #Examples:
-                       #  url(r'^$', 'mysite.views.home', name='home'),
-                       #  url(r'^blog/', include('blog.urls')),
+                       url(r'^', include(router.urls)),
                        url(r'^admin/', include(admin.site.urls)),
-                       url(r'^$', default_urlconf),
-                       url(r'^', include('snippets.urls')),
-                       )
+                       url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+)
+
