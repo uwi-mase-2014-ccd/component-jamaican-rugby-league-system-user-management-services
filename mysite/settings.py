@@ -40,8 +40,10 @@ INSTALLED_APPS = (
     'psycopg2',
     'rest_framework',
     'pygments',
-    'snippets',
+    #'snippets',
     'south',
+    'restservice',
+    'rest_framework_swagger',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -124,9 +126,7 @@ STATICFILES_FINDERS = (
 STATIC_ROOT = '/Users/vaun-pierrewynter/Web-Development/apps/django/django_projects/static/'
 
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+
 
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
