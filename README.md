@@ -5,9 +5,11 @@
 
 # Requirements
 
-* Python (2.6.5+, 2.7)
-* Django (1.6)
-* Django Rest Framework (0.1.14)
+
+
+# URL 
+
+*****Coming Soon 
 
 # Arguments
 
