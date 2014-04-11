@@ -64,22 +64,23 @@ Let's take a look at an example of the arguments that would be passed
     GET
 ```
 <ul>
-<li>/AllUser      -- API endpoint returns all users</li>
-<li>/AuthenticateUser/{email}/{passCode}</li>
+<li><strong>/AllUser</strong>      -- API endpoint returns all users</li>
+<li><strong>/AuthenticateUser/{email}/{passCode}</strong></li>
 </ul>
 		{ 
 		"email": "email",
 		"passCode": "password"
 		}
 <ul>		
-<li>/User/{email}	-- API endpoint returns the user whose email has been passed </li>
-<li>/AllUserTypes	-- API endpoint returns all user types </li>
+<li><strong>/User/{email}</strong>	-- API endpoint returns the user whose email has been passed </li>
+<li><strong>/AllUserTypes</strong>	-- API endpoint returns all user types </li>
 </ul>
 ```
     PUT
 ```
-<p>/EditUser/{email}   -- API endpoint which allows the user information to be edited but you are not allowed to change the user's </p>
-
+<ul>
+<li><strong>/EditUser/{email}</strong>   -- API endpoint which allows the user information to be edited but you are not allowed to change the user's</ul>
+</ul>
 <p>
 	The Edit User request requires all parameters as shown in the ```JSON``` string below, i.e the email has to remain the same 
 </p>
