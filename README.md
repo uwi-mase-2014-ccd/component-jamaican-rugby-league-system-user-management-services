@@ -9,12 +9,15 @@
 
 # URL 
 
-*****Coming Soon 
-
+http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/
+****	Test
+		<p>
+			http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
+		</p>
 # Arguments
 
 
-The user management webservice accepts 8 parameters, with two one them being optional
+The user management webservice accepts five (5) parameters, with two one them being optional
 
 <dl>
 <dt>firstname  (string) </dt>
@@ -23,22 +26,13 @@ The user management webservice accepts 8 parameters, with two one them being opt
 <dt>lastname  (string)</dt>
   <dd>The users last name  </dd>
 
-<dt>email  (email) </dt>
-  <dd>The users email address // eg. youremail@gmail.com</dd>
+<dt>email  (string) </dt>
+  <dd>The users email address, this is also the primary key // eg. youremail@gmail.com</dd>
 
-<dt>dateofBirth  (date)</dt>
-  <dd>Date of birth,  format: YYYY-MM-DD</dd>
-
-<dt>username (string, optional)</dt>
-  <dd>This the primary key</dd>
-
-<dt>password (string)</dt>
+<dt>passCode (string)</dt>
   <dd>The user password</dd>
 
-<dt>gender  (string,optional)</dt>
-  <dd>The users gender the API accepts 'M' for male or 'F' for female.</dd>
-
-<dt>usertype (string,optional)</dt>
+<dt>userType (string,optional)</dt>
   <dd>This indicates the type of user i.e administrator, superuser, etc </dd>
 
 
@@ -50,16 +44,13 @@ Let's take a look at an example of the arguments that would be passed
 
 
 ```python
-    {
-     "firstname": "small",
-     "lastname": "islands",
-      "email": "jrls@gmail.com",
-      "dateOfBirth": "2002-12-12",
-      "username": "jam",
-      "password": "root",
-      "gender": "",
-     "usertype": ""
-    }
+	{
+		"email": "chris@uwi.com",
+		"firstName": "Christopher",
+		"lastName": "Walton",
+		"passCode": "password",
+		"userType": "admin"
+	}
 
 ```
 # Endpoints
@@ -67,7 +58,9 @@ Let's take a look at an example of the arguments that would be passed
 ```
     POST
 ```
-<p>/users/</p>
+
+userType the options are "generalUser" or "admin"
+<p>/CreateUser/</p>
 
 ```
     GET
