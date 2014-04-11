@@ -64,17 +64,17 @@ Let's take a look at an example of the arguments that would be passed
     GET
 ```
 <ul>
-<li>/AllUser</li>
-API endpoint returns all users
+<li>/AllUser      -- API endpoint returns all users</li>
 <li>/AuthenticateUser/{email}/{passCode}</li>
 </ul>
 		{ 
 		"email": "email",
 		"passCode": "password"
 		}
-<p>/User/{email}	-- API endpoint returns the user whose email has been passed </p>
-<p>/AllUserTypes	-- API endpoint returns all user types </p>
-
+<ul>		
+<li>/User/{email}	-- API endpoint returns the user whose email has been passed </li>
+<li>/AllUserTypes	-- API endpoint returns all user types </li>
+</ul>
 ```
     PUT
 ```
