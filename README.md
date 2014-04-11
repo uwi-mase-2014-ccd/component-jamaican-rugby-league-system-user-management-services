@@ -58,7 +58,7 @@ Let's take a look at an example of the arguments that would be passed
     POST
 ```
 <ul>
-<li>/CreateUser</li>
+<li><strong>/CreateUser</strong></li>
 </ul>
 ```
     GET
@@ -97,7 +97,7 @@ Let's take a look at an example of the arguments that would be passed
 ```
     DELETE
 ```
-<p>/DeleteUser/{email}  -- API endpoint deletes the user whose email address has been specfied  ```return True``` if deleted else ```return False```</p>
+<p><strong>/DeleteUser/{email}</strong>  -- API endpoint deletes the user whose email address has been specfied  ```return True``` if deleted else ```return False```</p>
 
 <p>
 	 EXAMPLE: For a GET you would use the 	
