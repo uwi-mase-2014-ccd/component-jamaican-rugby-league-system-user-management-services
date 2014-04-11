@@ -64,7 +64,8 @@ Let's take a look at an example of the arguments that would be passed
     GET
 ```
 <ul>
-<li>/AllUser      -- API endpoint returns all users</li>
+<li>/AllUser</li>
+API endpoint returns all users
 <li>/AuthenticateUser/{email}/{passCode}</li>
 </ul>
 		{ 
