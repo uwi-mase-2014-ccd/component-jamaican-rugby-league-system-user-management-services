@@ -69,6 +69,8 @@ Let's take a look at an example of the arguments that would be passed
 		"email": "email",
 		"passCode": "password"
 		}
+<p>/User/{email}	-- API endpoint returns the user whose email has been passed </p>
+<p>/AllUserTypes	-- API endpoint returns all user types </p>
 
 ```
     PUT
