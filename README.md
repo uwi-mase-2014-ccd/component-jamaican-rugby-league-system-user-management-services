@@ -3,10 +3,6 @@
 
 **This api is used to create, edit and delete user information.**
 
-# Requirements
-
-
-
 # URL 
 
 http://usermanagement.somee.com/UserManagementComponent/RestServiceImpl.svc
