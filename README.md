@@ -110,8 +110,8 @@ Let's take a look at an example of the arguments that would be passed
 # Additional Information
 
 A user must be created before you are able to login, or run
-```GET /AllUser ```and use one of the users' username and password
-
+```GET /AllUser ```and use one of the users' username and password.
+Note that as stated above the email is the primary key, therefore two users cant exist with the same primary key
 
 
 
