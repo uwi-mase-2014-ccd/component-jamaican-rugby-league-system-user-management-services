@@ -57,14 +57,16 @@ Let's take a look at an example of the arguments that would be passed
 ```
     POST
 ```
-
-<p>/CreateUser</p>
-
+<ul>
+<li>/CreateUser</li>
+</ul>
 ```
     GET
 ```
-<p>/AllUser      -- API endpoint returns all users</p>
-<p>/AuthenticateUser/{email}/{passcode}</p>
+<ul>
+<li>/AllUser      -- API endpoint returns all users</li>
+<li>/AuthenticateUser/{email}/{passCode}</li>
+</ul>
 		{ 
 		"email": "email",
 		"passCode": "password"
