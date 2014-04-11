@@ -75,19 +75,18 @@ Let's take a look at an example of the arguments that would be passed
 ```
 <p>/EditUser/{email}   -- API endpoint which allows the user information to be edited but you are not allowed to change the user's </p>
 
-<h2>
+<p>
 	The Edit User request requires all parameters as shown in the ```JSON``` string below, i.e the email has to remain the same 
-</h2>
-	<p>
-		{
-			"email": "chris@uwi.com",
-			"firstName": "Christopher",
-			"lastName": "Walton",
-			"passCode": "password",
-			"userType": "admin"
-		}
+</p>
+	{
+		"email": "chris@uwi.com",
+		"firstName": "Christopher",
+		"lastName": "Walton",
+		"passCode": "password",
+		"userType": "admin"
+	}
 
-	</p>
+
 
 ```
     DELETE
