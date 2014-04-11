@@ -9,7 +9,7 @@
 
 # URL 
 
-http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc
+http://usermanagement.somee.com/UserManagementComponent/RestServiceImpl.svc
 
 
 
@@ -99,7 +99,7 @@ Let's take a look at an example of the arguments that would be passed
 	 EXAMPLE: For a GET you would use the 	
 </p>
 ```
-URL http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
+	http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
 
 ```
 
