@@ -10,10 +10,12 @@
 # URL 
 
 http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/
-****	Test
-		<p>
-			http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
-		</p>
+
+		
+			# http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
+		
+
+
 # Arguments
 
 
@@ -32,8 +34,8 @@ The user management webservice accepts five (5) parameters, with two one them be
 <dt>passCode (string)</dt>
   <dd>The user password</dd>
 
-<dt>userType (string,optional)</dt>
-  <dd>This indicates the type of user i.e administrator, superuser, etc </dd>
+<dt>userType (string)</dt>
+  <dd>This indicates the type of user, the userType accepts of of two choices "admin" or "generalUser"</dd>
 
 
 **Below**: *Below is an example of a JSON object*
@@ -59,7 +61,6 @@ Let's take a look at an example of the arguments that would be passed
     POST
 ```
 
-userType the options are "generalUser" or "admin"
 <p>/CreateUser/</p>
 
 ```
@@ -78,6 +79,9 @@ userType the options are "generalUser" or "admin"
     DELETE
 ```
 <p>/users/{pk}/   -- API endpoint deletes the user whose username has been specfied</p>
+
+# Additional Information
+
 
 
 
