@@ -9,11 +9,8 @@
 
 # URL 
 
-http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/
+http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc
 
-		
-			# http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
-		
 
 
 # Arguments
@@ -61,24 +58,44 @@ Let's take a look at an example of the arguments that would be passed
     POST
 ```
 
-<p>/CreateUser/</p>
+<p>/CreateUser</p>
 
 ```
     GET
 ```
-<p>/user/       -- API endpoint returns all users</p>
-<p>/users/{pk}/    -- API endpoint only return user information whose username {pk} has been specified </p>
-<p>/users/{pk}/get_email -- API endpoint returns email of a user
+<p>/AllUser      -- API endpoint returns all users</p>
 
 ```
     PUT
 ```
-<p>/users/{pk}/   -- API endpoint which allows the user information to be edited </p>
+<p>/EditUser/{email}   -- API endpoint which allows the user information to be edited but you are not allowed to change the user's </p>
+
+	<h2>
+		The Edit User request requires all parameters as shown in the ```JSON``` string below, i.e the email has to remain the same 
+	</h2>
+	<p>
+		{
+			"email": "chris@uwi.com",
+			"firstName": "Christopher",
+			"lastName": "Walton",
+			"passCode": "password",
+			"userType": "admin"
+		}
+
+	</p>
 
 ```
     DELETE
 ```
-<p>/users/{pk}/   -- API endpoint deletes the user whose username has been specfied</p>
+<p>/DeleteUser/{email}  -- API endpoint deletes the user whose email address has been specfied  ```return True``` if deleted else ```return False```</p>
+
+<p>
+	 EXAMPLE: For a GET you would use the 	
+</p>
+```
+URL http://usermanagement.somee.com/WEBSERVICE/RestServiceImpl.svc/AllUsers
+
+```
 
 # Additional Information
 
